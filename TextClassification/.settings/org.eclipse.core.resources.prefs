@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/BagOfWords.py=cp936
+encoding//src/BagOfWordsConstruction.py=utf-8
+encoding//src/CorpusFilesCodingConv.py=utf-8
+encoding//src/SegmentationDemo.py=utf-8
+encoding//src/SegregationCorpus.py=utf-8
+encoding//src/StopwordsFileCodingConv.py=UTF-8
+encoding//src/TestSegFile.py=UTF-8
+encoding//src/WordBagConstruction.py=UTF-8
+encoding//src/WordModel.py=utf-8
+encoding/<project>=UTF-8
