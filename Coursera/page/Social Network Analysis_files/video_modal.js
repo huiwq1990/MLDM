@@ -1,1 +1,0 @@
-$(document).ready(function(){var e=$(".course-modal-frame"),t=Modal(e);t.on("open",function(){ModalFocus.enable(e)}),t.on("close",function(){window.QL_player&&window.QL_player.mediaelement_handle.remove(),ModalFocus.disable()})});
