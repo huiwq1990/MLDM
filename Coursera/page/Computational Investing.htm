@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)https://class.coursera.org/compinvesting1-2012-001/lecture/index -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Video Listing | Computational Investing, Part I</title>
+<link rel="stylesheet" href="https://dt5zaw6a98blc.cloudfront.net/site-static/2a73512a3331d2a1b6ccacbbfffa4b6465fb7fa9/css/spark.main.css">
+<link rel="stylesheet" href="https://www.coursera.org/maestro/api/course/364/course.css">
+<link rel="stylesheet" href="https://dt5zaw6a98blc.cloudfront.net/site-static/2a73512a3331d2a1b6ccacbbfffa4b6465fb7fa9/spark/core/css/jquery_ui/jquery_ui.css">
+
+<link rel="icon" href="https://spark-public.s3.amazonaws.com/compinvesting1/static/images/favicon.ico">
+
+</head>
+
+<body>
+    <a href="https://class.coursera.org/compinvesting1-2012-001/lecture/index#course-page-content" class="hidden">Skip Navigation</a>
+    <div class="hidden">
+        This page features MathJax technology to render mathematical formulae.
+        If you are using a screen reader, please visit <a href="http://www.dessci.com/en/products/mathplayer/">MathPlayer</a> to download the plugin for your browser. Please note that this is an Internet Explorer-only plugin at this time.
+    </div>
+
+    <h1 class="hidden">Computational Investing, Part I</h1>
+
+    
+    
+<div class="course-topbar container-fluid">
+
+    <div class="row-fluid">
+        
+        <div class="span3">
+          <a href="https://www.coursera.org/" class="course-topbar-logo"></a>
+        </div>
+
+        <div class="course-topbar-nav-container span9" style="float:right;">
+            <h2 class="hidden">Top Navigation Bar</h2>
+
+            <ul class="course-topbar-nav-list">
+                <li class="course-topbar-nav-list-item"><a href="https://www.coursera.org/courses/" target="_new">Courses</a></li>
+
+                
+                <li class="course-topbar-nav-list-item" data-popup="#course-topbar-aboutus" data-popup-bind-open="mouseenter" data-popup-direction="se" data-popup-close="" style="cursor:pointer;">
+                    <a>About <i class="icon-caret-down"></i></a>
+                </li>
+
+                                
+                <li class="course-topbar-nav-list-item" data-popup="#course-topbar-my" data-popup-bind-open="mouseenter" data-popup-close="" style="cursor:pointer;" data-popup-direction="se">
+                    <a data-user-id="559913">hui <i class="icon-caret-down"></i></a>
+                </li>
+                
+                            </ul>
+        </div>
+    </div>
+
+    <div id="course-topbar-aboutus" class="course-topbar-sublist">
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/jobs" target="_new">Jobs</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/team" target="_new">Team</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/contact" target="_new">Contact Us</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/about/" target="_new">About Us</a>
+    </div>
+
+    <div id="course-topbar-my" class="course-topbar-sublist">
+        
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/" target="_new">Courses</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/profile" target="_new">Profile</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/records" target="_new">Course Records</a>
+        <a class="course-topbar-sublist-item" href="https://www.coursera.org/account/settings" target="_new">Settings</a>
+        <a class="course-topbar-sublist-item" href="https://class.coursera.org/compinvesting1-2012-001/class/preferences">Course Preferences</a>
+        <a class="course-topbar-sublist-item" href="https://class.coursera.org/compinvesting1-2012-001/auth/logout">Logout</a>
+    </div>
+
+</div>
+
+
+
+
+
+<style type="text/css">
+ 
+.course-topbar {
+  background-color: #4d4d4d;
+  box-shadow: inset 0px -6px 18px 0px rgba(0, 0, 0, 0.25);
+}
+
+.course-topbar-logo {
+   margin-top: 12px;
+   margin-left: 21px;
+}
+
+div.course-topbar-sublist {
+  border-top: solid 3e3e3e 1px;
+  background: #3e3e3e;
+}
+
+li.course-topbar-nav-list-item {
+  text-shadow 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.course-topbar-nav-container a {
+   color: #d4d4d4;
+}
+
+div.course-topbar-sublist a.course-topbar-sublist-item {
+  color: #d4d4d4;
+}
+
+
+.course-topbanner {
+  border-bottom: 1px solid #BCBEC0;
+  height: 71px;
+  box-shadow 0px 0px 1px 1px #ccc;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+.course-topbanner-university-logo {
+  width: 200px;
+  overflow: hidden;
+  float: left;
+  margin-top: 12px;
+  margin-left: 21px;
+  margin-right: 20px;
+  height: 59px;
+}
+
+.course-topbanner-university-logo img {
+  max-height: 48px;
+  max-width: 200px;
+}
+
+.course-topbanner-header {
+  font-size: 16px;
+  line-height: 21px;
+  vertical-align: top;
+  margin-top: 13px;
+  margin-left: 26px;
+  margin-bottom: 0px;
+  height: 50px;
+  overflow: hidden;
+}
+ 
+.course-topbanner-name {
+  font-size: 18px;
+}
+ 
+.course-topbanner-instructor {
+  font-size: 15px;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+
+.course-topbanner-side {
+  float: right;
+  margin-top: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-width: 120px;
+  text-align: right;
+}
+
+.course-topbanner-side img {
+  height: 48px;
+  border: 1px solid #eee;
+}
+
+</style>
+<div class="course-topbanner">
+  <div class="course-topbanner-university-logo">
+    <a href="https://www.coursera.org/gatech" class="coursera-university-color">
+      <img src="./Computational Investing_files/university_logo">
+    </a>
+  </div>
+
+  
+  <h1 class="course-topbanner-header">
+      <a class="course-topbanner-name coursera-university-color" href="https://class.coursera.org/compinvesting1-2012-001/class/index">
+        Computational Investing, Part I      </a>
+      <br>
+      <span class="course-topbanner-instructor">
+        by Tucker Balch      </span>
+  </h1>
+
+
+
+</div>
+    
+        <div class="container-fluid" style="position:relative;">
+        <div class="row-fluid">
+            <div id="course-page-sidebar">
+                <div class="course-navbar-container">
+		<a href="https://class.coursera.org/compinvesting1-2012-001/class/index">
+	<img src="./Computational Investing_files/logo" style="width: 210px;height: 112px;margin: -15px 0px 8px 1px; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35);">
+	</a>
+	<h2 class="hidden">Side Navigation Bar</h2>
+<ul class="course-navbar-list">
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/class/index" class="coursera-university-color">
+				
+				Home							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=GettingStarted2" class="coursera-university-color">
+				
+				Getting Started							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=SyllabusPacingGuideA" class="coursera-university-color">
+				
+				Syllabus 							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/forum/list?forum_id=10" class="coursera-university-color">
+				
+				Participant Bios							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/forum/list?forum_id=2" class="coursera-university-color">
+				
+				Q&amp;A Forum							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week1a" class="coursera-university-color">
+				
+				Week 1							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a" class="coursera-university-color">
+				
+				Week 2							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week3" class="coursera-university-color">
+				
+				Week 3							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week4" class="coursera-university-color">
+				
+				Week 4							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5" class="coursera-university-color">
+				
+				Week 5							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week6" class="coursera-university-color">
+				
+				Week 6							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week7" class="coursera-university-color">
+				
+				Week 7							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Homework3" class="coursera-university-color">
+				
+				Homework 3							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Homework4" class="coursera-university-color">
+				
+				Homework 4							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/forum/index" class="coursera-university-color">
+				
+				Discussion Forums							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item active">
+								<a href="./Computational Investing_files/Computational Investing.htm" class="coursera-university-color">
+				
+				Video Lectures							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/quiz/index" class="coursera-university-color">
+				
+				Quiz Results							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/assignment/index" class="coursera-university-color">
+				
+				Programming Assignments							</a>
+						</li>
+	
+		
+	<li class="course-navbar-item">
+								<a href="https://class.coursera.org/compinvesting1-2012-001/human_grading/index" class="coursera-university-color">
+				
+				Peer Assessments							</a>
+						</li>
+	
+	
+		<li class="course-navbar-item">
+		<a href="https://share.coursera.org/wiki/index.php/compinvesting1:Main" target="_blank" class="coursera-university-color">
+			Course Wiki
+			<span class="icon-share"></span>
+		</a>
+	</li>
+		
+		<li class="course-navbar-item">
+		<a href="http://www.meetup.com/Coursera/" target="_blank" class="coursera-university-color">
+			Join a Meetup
+			<span class="icon-share"></span>
+		</a>
+	</li>
+	</ul>
+
+</div>            </div>
+            <div id="course-page-content">
+                <div class="course-lectures-list">
+  <h2 class="course-page-header">Video Lectures</h2>
+
+  <div><!-- Lecture List Preamble Here --></div>
+
+    
+  <p style="margin-bottom:20px;">
+    Having trouble viewing lectures?
+    Try changing your player in <a target="_blank" href="https://class.coursera.org/compinvesting1-2012-001/class/preferences#course-preferences-lecture">course preferences</a>.
+  </p>
+
+  <div class="course-item-list">
+<div class="course-item-list-header expanded"><h3><span class="icon-chevron-down" style="width:18px;display:inline-block;"></span> &nbsp;Week 1</h3> <span class="hidden">(expanded, click to collapse)</span></div><ul class="course-item-list-section-list"><li class="unviewed"><a data-lecture-id="35" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=35" href="https://class.coursera.org/compinvesting1-2012-001/lecture/35" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Class Overview</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=35_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Class Overview</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=35_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Class Overview</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=35" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Class Overview</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="3" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=3" href="https://class.coursera.org/compinvesting1-2012-001/lecture/3" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_021</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=3_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_021</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=3_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_021</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=3" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_021</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="9" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=9" href="https://class.coursera.org/compinvesting1-2012-001/lecture/9" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_022</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=9_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_022</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=9_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_022</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=9" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_022</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="11" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=11" href="https://class.coursera.org/compinvesting1-2012-001/lecture/11" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_023</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=11_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_023</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=11_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_023</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=11" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_023</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="13" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=13" href="https://class.coursera.org/compinvesting1-2012-001/lecture/13" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_024</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=13_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_024</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=13_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_024</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=13" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_024</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="15" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=15" href="https://class.coursera.org/compinvesting1-2012-001/lecture/15" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_025</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=15_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_025</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=15_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_025</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=15" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_025</div>
+        </a>
+</div>
+</li></ul><div class="course-item-list-header expanded"><h3><span class="icon-chevron-down" style="width:18px;display:inline-block;"></span> &nbsp;Week 2</h3> <span class="hidden">(expanded, click to collapse)</span></div><ul class="course-item-list-section-list"><li class="unviewed"><a data-lecture-id="39" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=39" href="https://class.coursera.org/compinvesting1-2012-001/lecture/39" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_031</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=39_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_031</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=39_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_031</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=39" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_031</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="41" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=41" href="https://class.coursera.org/compinvesting1-2012-001/lecture/41" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_032</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=41_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_032</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=41_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_032</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=41" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_032</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="43" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=43" href="https://class.coursera.org/compinvesting1-2012-001/lecture/43" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_033</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=43_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_033</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=43_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_033</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=43" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_033</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="45" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=45" href="https://class.coursera.org/compinvesting1-2012-001/lecture/45" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_034</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=45_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_034</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=45_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_034</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=45" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_034</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="47" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=47" href="https://class.coursera.org/compinvesting1-2012-001/lecture/47" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_041</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=47_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_041</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=47_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_041</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=47" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_041</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="49" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=49" href="https://class.coursera.org/compinvesting1-2012-001/lecture/49" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_042</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=49_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_042</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=49_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_042</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=49" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_042</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="51" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=51" href="https://class.coursera.org/compinvesting1-2012-001/lecture/51" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_043</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=51_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_043</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=51_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_043</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=51" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_043</div>
+        </a>
+</div>
+</li></ul><div class="course-item-list-header expanded"><h3><span class="icon-chevron-down" style="width:18px;display:inline-block;"></span> &nbsp;Week 3</h3> <span class="hidden">(expanded, click to collapse)</span></div><ul class="course-item-list-section-list"><li class="unviewed"><a data-lecture-id="53" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=53" href="https://class.coursera.org/compinvesting1-2012-001/lecture/53" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_061</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=53_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_061</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=53_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_061</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=53" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_061</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="55" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=55" href="https://class.coursera.org/compinvesting1-2012-001/lecture/55" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_062</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=55_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_062</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=55_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_062</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=55" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_062</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="57" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=57" href="https://class.coursera.org/compinvesting1-2012-001/lecture/57" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_063</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=57_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_063</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=57_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_063</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=57" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_063</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="59" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=59" href="https://class.coursera.org/compinvesting1-2012-001/lecture/59" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_064</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=59_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_064</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=59_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_064</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=59" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_064</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="61" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=61" href="https://class.coursera.org/compinvesting1-2012-001/lecture/61" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_065</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=61_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_065</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=61_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_065</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=61" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_065</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="63" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=63" href="https://class.coursera.org/compinvesting1-2012-001/lecture/63" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_066</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=63_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_066</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=63_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_066</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=63" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_066</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="65" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=65" href="https://class.coursera.org/compinvesting1-2012-001/lecture/65" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_081</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=65_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_081</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=65_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_081</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=65" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_081</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="67" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=67" href="https://class.coursera.org/compinvesting1-2012-001/lecture/67" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_082</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=67_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_082</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=67_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_082</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=67" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_082</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="69" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=69" href="https://class.coursera.org/compinvesting1-2012-001/lecture/69" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_083</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=69_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_083</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=69_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_083</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=69" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_083</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="71" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=71" href="https://class.coursera.org/compinvesting1-2012-001/lecture/71" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_071</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=71_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_071</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=71_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_071</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=71" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_071</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="73" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=73" href="https://class.coursera.org/compinvesting1-2012-001/lecture/73" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_072</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=73_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_072</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=73_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_072</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=73" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_072</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="75" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=75" href="https://class.coursera.org/compinvesting1-2012-001/lecture/75" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_073</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=75_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_073</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=75_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_073</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=75" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_073</div>
+        </a>
+</div>
+</li></ul><div class="course-item-list-header expanded"><h3><span class="icon-chevron-down" style="width:18px;display:inline-block;"></span> &nbsp;Week 4</h3> <span class="hidden">(expanded, click to collapse)</span></div><ul class="course-item-list-section-list"><li class="unviewed"><a data-lecture-id="83" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=83" href="https://class.coursera.org/compinvesting1-2012-001/lecture/83" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_091</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=83_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_091</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=83_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_091</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=83" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_091</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="85" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=85" href="https://class.coursera.org/compinvesting1-2012-001/lecture/85" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_092</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=85_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_092</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=85_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_092</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=85" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_092</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="89" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=89" href="https://class.coursera.org/compinvesting1-2012-001/lecture/89" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_093</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=89_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_093</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=89_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_093</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=89" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_093</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="93" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=93" href="https://class.coursera.org/compinvesting1-2012-001/lecture/93" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_094B</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=93_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_094B</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=93_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_094B</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=93" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_094B</div>
+        </a>
+</div>
+</li></ul><div class="course-item-list-header expanded"><h3><span class="icon-chevron-down" style="width:18px;display:inline-block;"></span> &nbsp;Week 5</h3> <span class="hidden">(expanded, click to collapse)</span></div><ul class="course-item-list-section-list"><li class="unviewed"><a data-lecture-id="95" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=95" href="https://class.coursera.org/compinvesting1-2012-001/lecture/95" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_111</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=95_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_111</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=95_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_111</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=95" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_111</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="97" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=97" href="https://class.coursera.org/compinvesting1-2012-001/lecture/97" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_112</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=97_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_112</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=97_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_112</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=97" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_112</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="99" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=99" href="https://class.coursera.org/compinvesting1-2012-001/lecture/99" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_113</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=99_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_113</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=99_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_113</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=99" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_113</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="101" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=101" href="https://class.coursera.org/compinvesting1-2012-001/lecture/101" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_114</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=101_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_114</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=101_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_114</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=101" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_114</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="103" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=103" href="https://class.coursera.org/compinvesting1-2012-001/lecture/103" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_115</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=103_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_115</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=103_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_115</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=103" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_115</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="105" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=105" href="https://class.coursera.org/compinvesting1-2012-001/lecture/105" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_121</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=105_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_121</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=105_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_121</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=105" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_121</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="107" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=107" href="https://class.coursera.org/compinvesting1-2012-001/lecture/107" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_122</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=107_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_122</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=107_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_122</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=107" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_122</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="109" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=109" href="https://class.coursera.org/compinvesting1-2012-001/lecture/109" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_123</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=109_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_123</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=109_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_123</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=109" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_123</div>
+        </a>
+</div>
+</li></ul><div class="course-item-list-header expanded"><h3><span class="icon-chevron-down" style="width:18px;display:inline-block;"></span> &nbsp;Week 6</h3> <span class="hidden">(expanded, click to collapse)</span></div><ul class="course-item-list-section-list"><li class="unviewed"><a data-lecture-id="111" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=111" href="https://class.coursera.org/compinvesting1-2012-001/lecture/111" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_131</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=111_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_131</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=111_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_131</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=111" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_131</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="113" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=113" href="https://class.coursera.org/compinvesting1-2012-001/lecture/113" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_132</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=113_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_132</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=113_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_132</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=113" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_132</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="115" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=115" href="https://class.coursera.org/compinvesting1-2012-001/lecture/115" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_133</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=115_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_133</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=115_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_133</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=115" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_133</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="117" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=117" href="https://class.coursera.org/compinvesting1-2012-001/lecture/117" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_141</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=117_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_141</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=117_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_141</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=117" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_141</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="119" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=119" href="https://class.coursera.org/compinvesting1-2012-001/lecture/119" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_142</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=119_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_142</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=119_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_142</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=119" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_142</div>
+        </a>
+</div>
+</li></ul><div class="course-item-list-header expanded"><h3><span class="icon-chevron-down" style="width:18px;display:inline-block;"></span> &nbsp;Week 7</h3> <span class="hidden">(expanded, click to collapse)</span></div><ul class="course-item-list-section-list"><li class="unviewed"><a data-lecture-id="121" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=121" href="https://class.coursera.org/compinvesting1-2012-001/lecture/121" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_161</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=121_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_161</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=121_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_161</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=121" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_161</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="125" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=125" href="https://class.coursera.org/compinvesting1-2012-001/lecture/125" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_162</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=125_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_162</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=125_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_162</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=125" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_162</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="127" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=127" href="https://class.coursera.org/compinvesting1-2012-001/lecture/127" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_151</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=127_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_151</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=127_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_151</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=127" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_151</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="129" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=129" href="https://class.coursera.org/compinvesting1-2012-001/lecture/129" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_152</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=129_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_152</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=129_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_152</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=129" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_152</div>
+        </a>
+</div>
+</li><li class="unviewed"><a data-lecture-id="131" data-modal-iframe="https://class.coursera.org/compinvesting1-2012-001/lecture/view?lecture_id=131" href="https://class.coursera.org/compinvesting1-2012-001/lecture/131" data-modal=".course-modal-frame" rel="lecture-link" class="lecture-link">
+Computational_Investing_153</a>
+<div class="course-lecture-item-resource">
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=131_en&format=txt" data-placement="top" rel="tooltip" title="Subtitles (text)">
+           <i class="icon-align-justify resource"></i>
+           <div class="hidden">Subtitles (text) for Computational_Investing_153</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/subtitles?q=131_en&format=srt" data-placement="top" rel="tooltip" title="Subtitles (srt)">
+           <i class="icon-list resource"></i>
+           <div class="hidden">Subtitles (srt) for Computational_Investing_153</div>
+        </a>
+        <a target="_new" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=131" data-placement="top" rel="tooltip" title="Video (MP4)">
+           <i class="icon-download-alt resource"></i>
+           <div class="hidden">Video (MP4) for Computational_Investing_153</div>
+        </a>
+</div>
+</li></ul></div>
+</div>
+
+<div class="course-modal-frame" data-modal-overlay-class="course-modal-overlay-dark" data-modal-position="absolute" data-modal-position-top="50px">
+  <div style="position:absolute;top:-25px;height:25px;right:0px;color:white;cursor:pointer;" data-modal-close="">
+    Close
+  </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+        
+        <script type="text/javascript" async="" src="./Computational Investing_files/204.min.js"></script><script type="text/javascript" async="" src="./Computational Investing_files/ga.js"></script><script src="./Computational Investing_files/spark.js"></script>
+    
+    <script src="./Computational Investing_files/profiles.js" type="text/javascript"></script>
+    <script src="./Computational Investing_files/modal_focus.js" type="text/javascript"></script>
+    <script src="./Computational Investing_files/get_query_parameters.js" type="text/javascript"></script>
+    <script src="./Computational Investing_files/cookie.js" type="text/javascript"></script>
+    <script src="./Computational Investing_files/signature_track.js" type="text/javascript"></script>
+    <script src="./Computational Investing_files/item_list.js" type="text/javascript"></script>
+    <script src="./Computational Investing_files/navbar.js" type="text/javascript"></script>
+
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28377374-1']);
+  _gaq.push(['_setDomainName', 'coursera.org']);
+  _gaq.push(['_setAllowLinker', true]);  
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  window._204 = window._204 || [];
+  window._204.push({key:"pageview", val:{}});
+
+  (function()
+  {
+    var a = document.createElement('script'); a.type = 'text/javascript'; a.async = true;
+    a.src = 'https://eventing.coursera.org/204.min.js?client=spark&user=559913';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(a, s);
+  })();
+
+</script>
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  
+  styleSheets: [],
+  styles: {},
+
+  jax: ["input/TeX"],
+  
+  extensions: ["tex2jax.js"],
+
+  preJax: null,
+  postJax: null,
+
+  preRemoveClass: "MathJax_Preview",
+
+  showProcessingMessages: true,
+
+  messageStyle: "none",
+  
+  displayAlign: "center",
+  displayIndent: "0em",
+  
+  delayStartupUntil: "none",
+
+  skipStartupTypeset: false,
+  
+  elements: [],
+  
+  tex2jax: {
+	    inlineMath: [
+	                 ['$$','$$'],      // uncomment this for standard TeX math delimiters
+	                 ['\\(','\\)']
+	                 ],
+
+	                 displayMath: [
+	                 ['\\[','\\]']
+	                 ],
+
+    skipTags: ["script","noscript","style","textarea","pre","code"],
+    ignoreClass: "tex2jax_ignore",
+    processClass: "tex2jax_process",
+    processEscapes: false,
+    processEnvironments: true,
+    preview: "TeX"
+    
+  },
+  
+  mml2jax: {
+    preview: "alttext"
+    
+  },
+  
+  jsMath2jax: {
+    preview: "TeX"
+    
+  },
+
+  TeX: {
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    Macros: {},
+
+    extensions: ["AMSmath.js", "AMSsymbols.js"]
+    
+  },
+
+  //============================================================================
+  //
+  //  These parameters control the MathML inupt jax.
+  //
+  MathML: {
+    //
+    //  This specifies whether to use TeX spacing or MathML spacing when the
+    //  HTML-CSS output jax is used.
+    //
+    useMathMLspacing: false
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the HTML-CSS output jax.
+  //
+  "HTML-CSS": {
+    
+    scale: 100,
+    
+    availableFonts: ["STIX","TeX"],
+    
+    preferredFont: "TeX",
+    
+    webFont: "TeX",
+    
+    imageFont: "TeX",
+    
+    undefinedFamily: "STIXGeneral,'Arial Unicode MS',serif",
+      
+    showMathMenu: true,
+
+    styles: {},
+    
+    tooltip: {
+      delayPost: 600,          // milliseconds delay before tooltip is posted after mouseover
+      delayClear: 600,         // milliseconds delay before tooltip is cleared after mouseout
+      offsetX: 10, offsetY: 5  // pixels to offset tooltip from mouse position
+    }
+  },
+  
+  //============================================================================
+  //
+  //  These parameters control the NativeMML output jax.
+  //
+  NativeMML: {
+
+    scale: 100,
+
+    showMathMenu: true,
+    showMathMenuMSIE: true,
+
+    styles: {}
+  },
+  
+  MathMenu: {
+    delay: 400,
+    
+    helpURL: "http://www.mathjax.org/help/user/",
+
+    showRenderer: true,
+    showFontMenu: false,
+    showContext:  false,
+
+    windowSettings: {
+      status: "no", toolbar: "no", locationbar: "no", menubar: "no",
+      directories: "no", personalbar: "no", resizable: "yes", scrollbars: "yes",
+      width: 100, height: 50
+    },
+    
+    styles: {}
+    
+  },
+
+  MMLorHTML: {
+    prefer: {
+      MSIE:    "MML",
+      Firefox: "MML",
+      Opera:   "HTML",
+      other:   "HTML"
+    }
+  }
+});
+</script>
+<script type="text/javascript">
+(function () {
+
+  function loadMathJax() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://d2265nx4vomwra.cloudfront.net/2.1/MathJax.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  }
+
+  window.loadOrRefreshMathJax = function(domId) {
+    if (window.MathJax) {
+      if (domId) {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, domId]);
+      } else {
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+      }
+    } else {
+      loadMathJax();
+    }
+  }
+})();
+</script>
+    
+    <script type="text/javascript">
+
+        function hideMaintenanceMessage() {
+            $('#maintenance_message').hide();
+            document.cookie = "spark_maintmsghide_2=1;expires=0;path=/;";
+        }
+
+        var site_base_url = "https://www.coursera.org/";
+        var site_static_asset_url = "https://dt5zaw6a98blc.cloudfront.net/site-static/";
+        var spark_class_short_name = "compinvesting1";
+        var spark_class_id = 364;
+        var spark_class_url = "/compinvesting1-2012-001";
+        var spark_signature_url = "https://class.coursera.org/compinvesting1-2012-001/signature/";
+
+        var course_strings_name = "Computational Investing, Part I";
+        var student_full_name = "hui";
+
+        $(document).ready(function() {
+            //$('.course-assignment-deadline').eventLinker();
+        });
+
+    </script>
+
+<script src="./Computational Investing_files/jquery_ui.js"></script>
+<script src="./Computational Investing_files/jquery.history.js"></script>
+<script src="./Computational Investing_files/bootstrap.tooltip.js"></script>
+<script src="./Computational Investing_files/get_query_parameters.js"></script>
+<script src="./Computational Investing_files/lecture_list_functions.js"></script>
+<script src="./Computational Investing_files/video_modal.js"></script>
+
+
+
+
+</body></html>
